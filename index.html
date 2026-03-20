@@ -1,1 +1,235 @@
-<h1>hello naol </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naol - 3rd Year CS Student | Awasa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #ff8000;
+        --dark: #000000;
+        --light-bg: #ffffff;
+      }
+
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background-color: var(--light-bg);
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header,
+      main,
+      footer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px;
+      }
+
+      header {
+        text-align: center;
+        background: linear-gradient(to right, #321103, var(--primary));
+        color: white;
+        padding: 60px 20px;
+        border-radius: 0 0 20px 20px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+      }
+
+      section {
+        background: white;
+        margin: 30px 0;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(255, 128, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      h2 {
+        color: var(--dark);
+        margin-bottom: 20px;
+        border-bottom: 3px solid var(--primary);
+        padding-bottom: 10px;
+        width: 100%;
+      }
+
+      img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 4px solid var(--primary);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        margin: 20px auto;
+      }
+
+      .profile-photo:hover {
+        transform: scale(1.08);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        border-color: var(--dark);
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        width: 100%;
+      }
+
+      ul li {
+        margin: 12px 0;
+        font-size: 1.1rem;
+      }
+
+      ul li::before {
+        content: "→ ";
+        color: var(--primary);
+        font-weight: bold;
+        margin-right: 8px;
+      }
+
+      form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      input,
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid var(--primary);
+        border-radius: 6px;
+      }
+
+      button {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: var(--dark);
+        color: var(--primary);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: var(--dark);
+        color: white;
+        margin-top: auto;
+      }
+
+      footer a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Naol</h1>
+      <p>Computer Science Student | Learning Front-End Development</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <img
+          src="ChatGPT Image Mar 20, 2026, 12_07_01 AM.png"
+          alt="Naol profile picture at Dilla University campus"
+          class="profile-photo"
+        />
+        <p>
+          I'm a 3rd year CS student in Ethiopia. Passionate about web
+          development, especially making fast, mobile-friendly sites for
+          everyone (even on slow networks).
+        </p>
+      </section>
+
+      <section>
+        <h2>Current Skills</h2>
+        <ul>
+          <li>Semantic HTML5</li>
+          <li>Forms & Inputs</li>
+          <li>Accessibility (labels, alt text, etc.)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://github.com/naol13" target="_blank">My GitHub</a> | Made
+        with ❤️ in Dilla
+      </p>
+    </footer>
+  </body>
+</html>
